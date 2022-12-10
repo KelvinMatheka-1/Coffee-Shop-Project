@@ -23,7 +23,7 @@ function NavBar({user, setUser}) {
                     <li><NavLink  to="/home">Home</NavLink></li>
                     <li><NavLink  to="/checkout">Checkout</NavLink></li>
                      {/* <li><NavLink to="/">Signup</NavLink></li> */}
-                   {/* <li> <NavLink to="/login">Login</NavLink></li>  */}
+                   <li> <NavLink to="/login">Login</NavLink></li> 
                 </ul>
              ) : (
               <>
