@@ -16,8 +16,13 @@ function Home() {
     }, [])
     console.log(data)
 
-    
-
+    // function addCart () {
+    //   const newCart = {
+    //     ...data, count: 1,
+    // }
+    //   setData([newCart])
+    // }
+ 
 
     return (
     <>
@@ -35,12 +40,12 @@ function Home() {
                         <p id="desc">{data.description}</p>
                         <p className="price">{data.price}</p>
                         {/* <p>{data.category}</p> */}
-                        <button onClick={() => ({})} className="btn1" id="btn1">Add to Cart</button>
+                        <button onClick={() => (data)} to="/checkout" className="btn1" id="btn1">Add to Cart</button>
                     </div>
                 </div>
                 )
             })}
-            </div>    
+          </div>    
     </div>
 
     </>
